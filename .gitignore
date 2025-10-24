@@ -1,0 +1,14 @@
+# Ignorar arquivos de backup e temporários
+*.log
+*.tmp
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar configurações de IDE
+.vscode/
+
+# Ignorar arquivos JSON do projeto
+.monsters.json
+.monsters_pt.json

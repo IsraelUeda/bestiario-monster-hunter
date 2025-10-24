@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href ='./favicons/favicon-16x16.png'>
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    
+    <main>
+
+        <img src ='./images/bestiario.jpeg' alt='Bestiário' class="bestiario">
+        <img class="monstro_img" src="" alt="" />
+
+        <h1 class="monstro_data">
+            <span class="monstro_name"></span>
+            <span class="monstro_type"></span>
+        </h1>
+
+        <div class="monstro_info">
+            <p class="monstro_elementos"></p>
+            <p class="monstro_fraquezas"></p>
+            <p class="monstro_resistencias"></p>
+            <p class="monstro_habitats"></p>
+        </div>
+
+        <div class="monstro_description"></div>
+
+        <form class='form_search'>
+            <label for="inputMonstro" class="sr-only"></label>
+                <input
+                    type="search"
+                    id="inputMonstro"
+                    name="monstro"
+                    class="input_search"
+                    placeholder="Buscar monstro..."
+                    required
+                />
+
+        </form>
+
+        <div class = "buttons">
+            <button class = "btn_prev">Anterior &lt-</button>
+            <button class = "btn_next">Próximo -></button>
+        </div>
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+
+@font-face {
+  font-family: 'MedievalSharp-BookOblique';
+  src: url('\\fonts\\MedievalSharp-BookOblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'CloisterBlack', serif;
+}
+
+
+
+main {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 15px;
+    position: relative;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #775202, #e9c069 100%);
+    min-height: 100vh;
+    
+}
+
+.bestiario {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.monstro_img {
+    position: absolute;
+    width: 25%;
+    left: 15%;
+    bottom: 55%;
+    transform: translate(0%, 0%);
+    max-height: 50%;
+}
+
+.monstro_data {
+    position: absolute;
+    top: 45%; 
+    left: 50%; 
+    font-family: 'MedievalSharp-BookOblique', serif;
+    transform: translate(-78%, -5%); /* centraliza vertical e horizontal */
+    font-weight: 600;
+    font-size: clamp(8px, 3vw, 25px);
+    text-align: center; /* garante centralização de múltiplas linhas */
+    width: 80%; /* opcional: limita largura máxima do texto */
+}
+.monstro_type {
+    font-family: 'MedievalSharp-BookOblique', serif;
+    color: #000000;
+    text-transform: capitalize;
+    word-wrap: break-word; /* quebra palavras longas */
+}
+
+
+.monstro_name {
+    font-family: 'MedievalSharp-BookOblique', serif;
+    color: #000000;
+    text-transform: capitalize;
+    word-wrap: break-word; /* quebra palavras longas */
+}
+
+.form_search {
+    position : absolute;
+    width: 20%;
+    top: 6%;
+    left : 18%;
+}
+
+.input_search {
+    background-color: #D9C4A2;
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: clamp(8px, 2vw, 20px);
+    font-family: 'CloisterBlack', serif;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 5%;
+    left: 17%;
+    padding: 3%;
+    width: 65%;
+    transform:  translate(-3%, 0%);
+    display: flex;
+    gap: 20px;
+
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: none;
+    border-radius: 5px;
+    background-color: #D9C4A2;
+    color: #D9C4A2;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:active{
+    background-color: #D9C4A2;
+}
+
+.monstro_info{
+  display: none; /* escondido por padrão */
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+.monstro_info.visible{
+  font-family: 'MedievalSharp-BookOblique', serif;
+  position: absolute;
+  top: 13%;
+  overflow: auto;          /* adiciona scroll se passar da altura */
+  left: 86%;
+  border-radius: 20px;
+  padding: 15px 25px;
+  transform: translate(-78%, -5%); /* centraliza vertical e horizontal */
+  font-weight: 500;
+  font-size: clamp(8px, 3vw, 25px);
+  text-align: center; /* garante centralização de múltiplas linhas */
+  width: 46%; /* opcional: limita largura máxima do texto */
+  max-height: 80%; /* altura máxima */
+  word-wrap: break-word; /* quebra palavras longas */
+  opacity: 1;
+  display: block
+}
+
+.monstro_stats div {
+  margin: 8px 0;
+  font-family: 'MedievalSharp-BookOblique', serif;
+  font-size: clamp(10px, 2vw, 18px);
+  
+}
+
+.monstro_type {
+  display: block;
+  font-size: clamp(8px, 2vw, 20px);
+  color: #ff0000;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.monstro_elementos img,
+.monstro_fraquezas img,
+.monstro_resistencias img{
+  
+  width: 30px;
+  height: 28px;
+  vertical-align: middle;
+  margin: 0 4px;
+  overflow: auto;          /* adiciona scroll se passar da altura */
+}
+
+.monstro_elementos strong,
+.monstro_fraquezas strong,
+.monstro_resistencias strong {
+  margin-right: 4px;
+}
+
+.monstro_elementos .stat_item,
+.monstro_fraquezas .stat_item,
+.monstro_resistencias .stat_item {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.monstro_fraquezas .weakness_stars {
+  margin-left: 2px;
+  font-size: clamp(12px, 1.6vw, 18px);
+}
+
+.monstro_description {
+  position: absolute;
+  bottom: 16%;
+  left: 30%;
+  transform: translate(-50%, 0);
+  width: 37%;
+  max-height: 30%;
+  padding: 10px;
+  font-size: clamp(20px, 1.5vw, 16px);
+  font-family: 'MedievalSharp-BookOblique', serif;
+  color: #000;
+  text-align: justify;
+  overflow: auto;          /* adiciona scroll se passar da altura */
+}
